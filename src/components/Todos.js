@@ -21,11 +21,17 @@ class Todos extends Component {
     ],
   };
 
+  handleAddTodo = (todo)=>{
+    const newTodo ={
+      id : 
+    }
+  }
+
   render () {
     return (
       <div>
         <ul>
-          {this.state.todos.map(todo => (
+          {this.props.newTodo.map(todo => (
             <li key={todo.id}>{todo.task}: {todo.completed.toString()}</li>
           ))}
         </ul>
